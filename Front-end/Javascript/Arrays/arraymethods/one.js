@@ -1,0 +1,10 @@
+var loc=["Hyderabad","pune","Banglore"]
+console.log(loc)
+loc.pop()
+console.log(loc)
+loc.push("Andhrapradesh")
+console.log(loc)
+loc.shift()
+console.log(loc)
+loc.unshift("chennai")
+console.log(loc)
