@@ -4,6 +4,7 @@ employee.id=20//updating
 employee.loc="hyderabad"
 console.log(employee)
 console.log(employee.id)
+console.log("Print all keys")
 for(var k in employee)
 {
     console.log(k)//print all keys means id,name,sal,loc

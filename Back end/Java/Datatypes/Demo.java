@@ -6,5 +6,7 @@ public static void main(String args[])
 String[] names={"Deepa","Sunny","Gandhi"};
  System.out.println(size[0]);
  System.out.println(names[0]);
+ System.out.println(size.length);
+ System.out.println(names.length);
 }
 }

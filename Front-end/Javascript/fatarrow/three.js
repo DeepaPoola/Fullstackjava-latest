@@ -12,5 +12,5 @@ console.log(add(10, 20, 30))
     console.log("GM")
     console.log("GN")
 }
-console.log(a)//output - [Function: a]
+console.log(a)//output - [Function: a] GM GN
 a()*/
