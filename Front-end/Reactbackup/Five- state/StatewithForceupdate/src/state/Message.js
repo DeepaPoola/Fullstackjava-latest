@@ -9,6 +9,7 @@ import React, { Component } from 'react'
         this.forceUpdate()
     }
   render() {
+   
     return (
       <div>
         <h1>Message Component</h1>
