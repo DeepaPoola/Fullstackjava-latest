@@ -4,20 +4,17 @@ import {Link} from 'react-router-dom'
 class Navbar extends React.Component{
     render(){
         return <nav className='navbar navbar-dark bg-dark navbar-expand-lg'>
-          <Link to="#" className="navbar-brand">Axios</Link>
+          <Link to="/home" className="navbar-brand">Axios</Link>
             <div className='ml-auto'>
             <ul className='navbar-nav'>
                 <li className="nav-list">
-                    <Link to="/create" className="nav-link">Create</Link>
+                    <Link to="/home" className="nav-link">Home</Link>
                 </li>
                 <li className="nav-list">
-                    <Link to="/admin" className="nav-link">Admin</Link>
+                    <Link to="/about" className="nav-link">About</Link>
                 </li>
                 <li className="nav-list">
-                    <Link to="/products" className="nav-link">Products</Link>
-                </li>
-                <li className="nav-list">
-                    <Link to="/update" className="nav-link">Update</Link>
+                    <Link to="/user" className="nav-link">User</Link>
                 </li>
               
                
