@@ -13,6 +13,7 @@ import com.jpa.repository.PassengerRepository;
 @Component
 public class MyRunner implements CommandLineRunner {
 
+	
 	@Autowired
 	PassengerRepository passengerRepo;
 
@@ -21,11 +22,11 @@ public class MyRunner implements CommandLineRunner {
 		// TODO Auto-generated method stub
           
 		  Passenger p = new Passenger();
-		  p.setPassengerId(106);
-	      p.setFirstName("P");
-	      p.setLastName("S");
-	      p.setEmailId("SP@gmail.com");
-	      p.setSeatno(6);
+		  p.setPassengerId(12);
+	      p.setFirstName("S");
+	      p.setLastName("D");
+	      p.setEmailId("Sunny@gmail.com");
+	      p.setSeatno(3);
 	      passengerRepo.save(p);
 	      
 	      //display all passenger records
@@ -34,7 +35,7 @@ public class MyRunner implements CommandLineRunner {
 				System.out.println(passenger.getFirstName()+"------"+passenger.getLastName()+"-----"+passenger.getEmailId());
 			});
 			//display data based on id
-			Optional<Passenger> opt=passengerRepo.findById(106);
+			Optional<Passenger> opt=passengerRepo.findById(12);
 			Passenger p1 = opt.get();
 			System.out.println(p1.getFirstName()+"-----"+p1.getLastName());
 			
@@ -44,12 +45,12 @@ public class MyRunner implements CommandLineRunner {
 			System.err.println(p2.getFirstName()+"----"+p2.getLastName());
 			
 			//dispay data based on first Name and last Name
-			List<Passenger> p3 = passengerRepo.getPassengers("Sunny", "Nallapu");
+			List<Passenger> p3 = passengerRepo.getPassengers("S", "D");
 			p3.forEach(passenger->{
 				System.out.println("Passenger Email Id:....."+passenger.getEmailId());
 			});
 			
-			List<Passenger> p4 = passengerRepo.findbyFirstName("Deepa");
+			List<Passenger> p4 = passengerRepo.findbyFirstName("S");
 			
 			p4.forEach(passenger->{
 				System.out.println("Passenger Email Id:....."+passenger.getEmailId());
@@ -58,4 +59,5 @@ public class MyRunner implements CommandLineRunner {
 			
 	      
 		}
+
 }
