@@ -1,5 +1,5 @@
 import React,{useState} from 'react'
-
+0
 let Factorial =()=>{
     let [count,setCount]=useState(0)
     let [number,setNumber]=useState(5)

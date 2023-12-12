@@ -1,1 +1,1 @@
-<h1>Welcome to Spring boot MVC</h1>i
+<h1>Welcome to Spring boot MVC</h1>

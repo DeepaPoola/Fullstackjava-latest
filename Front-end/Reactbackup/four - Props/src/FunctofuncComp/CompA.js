@@ -1,6 +1,5 @@
 import React from 'react'
-import CompB
- from './CompB'
+import CompB from './CompB'
 let CompA=()=>{
     var id=10
     var name="Sunny"

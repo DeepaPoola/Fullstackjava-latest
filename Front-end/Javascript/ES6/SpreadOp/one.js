@@ -20,4 +20,4 @@ size1[0]=15
 console.log(size1)
 console.log(new_size1)
 
-/*
+
