@@ -1,11 +1,11 @@
 import React from 'react'
 import Navbar from './Navbar/Navbar'
-import {BrowserRouter as Router,Routes,Route,Navigate} from 'react-router-dom'
+import {BrowserRouter as Router,Routes,Route} from 'react-router-dom'
 import Home from './Dummy/Home'
 import About from './Dummy/About'
-import Login from './Test/Login'
-import Test from './Test/Test'
-import CompA from './classtoclass/CompA'
+import StateEx from './Hooks/StateEx'
+import Effect from './Hooks/Effect'
+import Context from './Hooks/Context'
  let App=()=>{
   return (
     <div>
@@ -14,14 +14,17 @@ import CompA from './classtoclass/CompA'
         <Routes>
          
            <Route path="/">
-          <Route index element={< Navigate to="/home" replace/>}/> 
+         {/* <Route index element={< Navigate to="/home" replace/>}/> */}
           <Route path="/home" element={<Home/>}/> 
             <Route path="/about" element={<About/>}/>
-            <Route path="/login" element={<Login/>}/>
-            <Route path="/compa" element={<CompA/>}/>
+          
+            <Route path="/stateEx" element={<StateEx/>}/>
+            <Route path="/effect" element={<Effect/>}/>
+            <Route path="/context" element={<Context/>}/>
+            
             </Route>
             
-            <Route path="/test" element={<Test/>}/>
+           
            
         </Routes>
         </Router>

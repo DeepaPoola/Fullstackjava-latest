@@ -13,14 +13,15 @@ class Navbar extends React.Component{
                   <li className='nav-list'>
                     <Link className='nav-link' to="/about">About</Link>
                   </li>
+                
                   <li className='nav-list'>
-                    <Link className='nav-link' to="/login">Login</Link>
+                    <Link className='nav-link' to="/stateEx">UseState</Link>
                   </li>
                   <li className='nav-list'>
-                    <Link className='nav-link' to="/test">Test</Link>
+                    <Link className='nav-link' to="/effect">UseEffect</Link>
                   </li>
                   <li className='nav-list'>
-                    <Link className='nav-link' to="/props">Props</Link>
+                    <Link className='nav-link' to="/context">Usecontext</Link>
                   </li>
                 </ul>
             </div>
