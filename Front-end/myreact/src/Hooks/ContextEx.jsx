@@ -1,7 +1,8 @@
 import React,{useContext} from 'react'
- import { LoginContext } from './Context'
+ 
+import LogincontextProvider from './Context/LogincontextProvider'
 const ContextEx = () => {
-   const login= useContext(LoginContext)
+   const login= useContext(LogincontextProvider)
    console.log(login)
   return (
     <div>

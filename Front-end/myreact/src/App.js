@@ -5,7 +5,7 @@ import Home from './Dummy/Home'
 import About from './Dummy/About'
 import StateEx from './Hooks/StateEx'
 import Effect from './Hooks/Effect'
-import Context from './Hooks/Context'
+import ContextEx from './Hooks/ContextEx'
  let App=()=>{
   return (
     <div>
@@ -20,7 +20,7 @@ import Context from './Hooks/Context'
           
             <Route path="/stateEx" element={<StateEx/>}/>
             <Route path="/effect" element={<Effect/>}/>
-            <Route path="/context" element={<Context/>}/>
+            <Route path="/contextex" element={<ContextEx/>}/>
             
             </Route>
             

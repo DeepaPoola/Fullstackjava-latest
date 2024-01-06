@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+.box{
+    width:400px;
+    margin:20px auto;
+    border:2px;
+    border-radius: 5px;
+    padding:20px 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+
+}
+p{
+   text-align: center;
+}
+button{
+    border: 0px;
+    border-radius: 5px;
+    background-color: #be3434;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left:130px;
+}
+button.toggle{
+    border: 0px;
+    border-radius: 5px;
+    background-color:darkviolet;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left:130px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+button.incr{
+    border: 0px;
+    border-radius: 5px;
+    background-color: #be3434;
+    color: #FFFFFF;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left:30px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+button.decr{
+    border: 0px;
+    border-radius: 5px;
+    background-color:aqua;
+    color:black;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin-left:200px;
+}
+button.reset{
+    border: 0px;
+    border-radius: 5px;
+    background-color:blanchedalmond;
+    color:black;
+    padding: 5px 10px;
+    cursor: pointer;
+    margin:50px 170px;
+}
+.card{
+   margin-left: 150px;
+}
+ul{
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  li{
+    font: 16px;
+    list-style: none;
+    margin: 20px 5px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 5px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
-  }
+  
+h1{
+    text-align: center;
 }
+li.completed{
+    box-shadow: rgb(62, 150, 0) 0px 1px 4px;
+    
+}
+
+li.incomplete{
+    box-shadow: rgba(135, 20, 0, 0.438) 0px 1px 4px;
+  }
+  .box.success{
+    background-color: #baffbf;
+  }
+  
+  .box.alert{
+    background-color: #ffb4b4;
+  }
+  
+  .box.warning{
+    background-color: #FFDEB4;
+  }
+  .box p{
+    margin: 10px;
+  }
+  
+  .box p.title{
+    font-size: 20px;
+  }
+  
+  .box p.description{
+    font-size: 14px;
+  }
+  .hidden{
+    display: none;
+  }  
