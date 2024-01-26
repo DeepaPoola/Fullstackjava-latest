@@ -6,6 +6,7 @@ import About from './Dummy/About'
 import StateEx from './Hooks/StateEx'
 import Effect from './Hooks/Effect'
 import ContextEx from './Hooks/ContextEx'
+import Login from './Login/Login'
  let App=()=>{
   return (
     <div>
@@ -21,6 +22,7 @@ import ContextEx from './Hooks/ContextEx'
             <Route path="/stateEx" element={<StateEx/>}/>
             <Route path="/effect" element={<Effect/>}/>
             <Route path="/contextex" element={<ContextEx/>}/>
+            <Route path="/login" element={<Login/>}/>
             
             </Route>
             
