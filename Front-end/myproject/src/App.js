@@ -1,18 +1,22 @@
-import React from 'react'
-import Counter from './Components/Counter';
-import Data from './Components/Data'
-import { Header } from './Components/Header';
-import { Boxcard } from './Components/Boxcard';
+import React,{useState} from 'react'
+import Login from './Forms/Login';
+import TaskList from './Forms/TaskList';
+import Footer from './Forms/Footer';
 import './App.css';
 
 const App = () => {
-  
+  const [tasks,setTask]=useState([
+    {id:10,name:"Record",completed:true},
+    {id:11,name:"Watch",completed:false},
+    {id:12,name:"view",completed:true}
+])
   return (
    <div>
-    <Header/>
-    <Data title="Random"/>
     
-    <Counter/>
+    <Login tasks={tasks} setTask={setTask}/>
+    <TaskList tasks={tasks} setTask={setTask}/>
+    
+    <Footer/>
    </div>
   )
 }
